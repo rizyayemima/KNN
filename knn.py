@@ -58,7 +58,8 @@ def cariTetangga(setDataLatih, dataX, k):
         else:
             votingKelas[respons] = 1
     hasilVoting = sorted(votingKelas.iteritems(),
-                         key=operator.itemgetter(1), reverse=True)
+                         key=operator.itemgetter(1), 
+                         reverse=True)
     return hasilVoting[0][0]
 
 
